@@ -1,0 +1,4 @@
+AWS_ACCESS_KEY = "AKIAZBAF5LSUUPBDG3U6"
+AWS_SECRET_KEY = "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"
+instance-type = "t2.micro"
+ami = "ami-054965c6cd7c6e462"

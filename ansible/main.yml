@@ -1,0 +1,16 @@
+--- 
+- hosts: localhost
+  become: yes
+  vars:
+    ansible_python_interpreter: /bin/python3
+  name: "This sets up an httpd webserver"
+  tasks: 
+    - name: "Install apache packages"
+      yum: 
+        name: httpd
+        state: present
+    - name: "ensure httpd is running"
+      service: 
+        name: httpd
+        state: started
+
